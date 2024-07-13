@@ -1,0 +1,226 @@
+
+body{
+    margin: 15px;
+    padding: 0;
+}
+.üst{
+    display: flex;
+    flex-direction:row;
+    margin: auto;
+    align-items: center;
+}
+.menu{
+    font-size: 25px;
+    font-weight: bold;
+    display: none;
+    margin-left: 100px; 
+}
+.sneaker{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 50px;
+    margin: 10px;
+}
+.Collections{
+    align-items: center;
+    display: flex;
+    color: gray;
+    font-size: 20px;
+    margin: 10px;
+}
+.logo{
+    display: flex;
+    padding-left: 40%;
+    padding-right: 30px;
+}
+.cizgi{
+    display: flex;
+    width: 1400px;
+    height: 1px;
+    margin-left: 50px;
+    background-color: gray;
+}
+.relative{
+    position: relative;
+    display: flex;
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+.absolute-1{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 249, 249);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.absolute-2{
+    display: none;
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 249, 249);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.üstAyakkabi{
+    display: flex;
+    flex-direction: row;
+}
+.yazilar{
+    display: flex;
+    flex-direction: column;
+}
+.ustBaslik{
+    margin-top: 120px;
+    margin-left: 90px;
+    opacity: 0.5;
+}
+.altBaslik{
+    margin-top: 20px;
+    margin-left: 90px;
+    font-size:50px;
+}
+.aciklama{
+    margin-top: 20px;
+    margin-left: 90px;
+    opacity: 0.5;
+    font-weight: bold;
+}
+.fiyat{
+    display: flex;
+    flex-direction: row;
+}
+.fiyat1{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 90px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.fiyat2{
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 25px;
+    border-radius: 15%;
+}
+.altFiyat{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 90px;
+    font-size: 20px;
+    opacity: 0.5;
+    text-decoration:line-through;
+    font-weight: bold;
+}
+.altAyakkabilar{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.ekleme{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.adet{
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgb(209, 204, 204);
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.sepet{
+    display: flex;
+    background-color: rgb(209, 204, 204);
+    align-items: center;
+    justify-content:space-evenly;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius:15px;
+}
+.sepet > span{
+    font-weight: bold;
+}
+.kucukAyakkabilar1{
+    display: flex;
+    border-radius: 15%;
+    margin-left: 100px;
+    margin-top: 30px;
+    opacity: 0.4;
+    outline-style:solid;
+    height:100px;
+    width:100px;
+
+}
+.kucukAyakkabilar{
+    display: flex;
+    border-radius: 15%;
+    margin-left: 20px;
+    margin-top: 30px;
+    height:100px;
+    width:100px;
+}
+@media screen and (max-width:480px){
+    .üstAyakkabi{
+        display: flex;
+        flex-direction: column;
+    }
+    .altAyakkabilar{
+        display: none;
+        flex-direction: row;
+        margin: 5px;
+    }
+    .absolute-1{
+        display: flex;
+    }
+    .absolute-2{
+        display: flex;
+    }
+    .üst{
+        display: flex;
+        flex-direction:row;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    .Collections{
+        display: none;
+    }
+    .menu{
+        display: flex; 
+    }
+    .ekleme{
+        display: flex;
+        flex-direction: column;
+    }
+    .sepet{
+        display: flex;
+        margin-left: 90px;
+    }
+}
