@@ -1,12 +1,11 @@
 
 body{
-    margin: 15px;
+    margin: 0;
     padding: 0;
 }
 .üst{
     display: flex;
     flex-direction:row;
-    margin: auto;
     align-items: center;
 }
 .menu{
@@ -31,10 +30,13 @@ body{
     font-size: 20px;
     margin: 10px;
 }
+.sepetÜst{
+    display: flex;
+    margin-right: 20px;
+    margin-left: 45%;
+}
 .logo{
     display: flex;
-    padding-left: 40%;
-    padding-right: 30px;
 }
 .cizgi{
     display: flex;
@@ -43,12 +45,15 @@ body{
     margin-left: 50px;
     background-color: gray;
 }
-.relative{
+.relative-üstAyakkabi{
     position: relative;
     display: flex;
     border-radius: 15px;
     margin-left: 100px;
     margin-top: 70px;
+}
+.relative-üstAyakkabi > img{
+    border-radius: 15px;
 }
 .absolute-1{
     display: none;
@@ -171,26 +176,48 @@ body{
 .kucukAyakkabilar1{
     display: flex;
     border-radius: 15%;
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: 90px;
+    margin-top: 5px;
     opacity: 0.4;
     outline-style:solid;
-    height:100px;
+    height: 100px;
     width:100px;
 
 }
 .kucukAyakkabilar{
     display: flex;
     border-radius: 15%;
-    margin-left: 20px;
-    margin-top: 30px;
-    height:100px;
+    margin: 5px  15px;
+    height: 100px;
     width:100px;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:480px ){
+    body{
+        background-color: rgb(208, 133, 133);
+    }
+    .sneaker{
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0px 0px;
+    }
+    .sepetÜst{
+        display: flex;
+        margin-right: 20px;
+        margin-left: 1%;
+    }
     .üstAyakkabi{
         display: flex;
         flex-direction: column;
+    }
+    .relative-üstAyakkabi{
+        position: relative;
+        display: flex;
+        border-radius: 15px;
+        margin-left: 50px;
+        margin-top: 70px;
     }
     .altAyakkabilar{
         display: none;
@@ -213,7 +240,8 @@ body{
         display: none;
     }
     .menu{
-        display: flex; 
+        display: flex;
+        margin-left: 50px;
     }
     .ekleme{
         display: flex;
@@ -224,3 +252,64 @@ body{
         margin-left: 90px;
     }
 }
+@media screen and (max-width:768px) and (min-width:480px){
+    body{
+        background-color: rgb(166, 140, 140);
+    }
+    .sneaker{
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0px 0px;
+    }
+    .sepetÜst{
+        display: flex;
+        margin-right: 20px;
+        margin-left: 1%;
+    }
+    .üstAyakkabi{
+        display: flex;
+        flex-direction: column; 
+    }
+    .ustBaslik{
+        margin-top: 50px;
+        margin-left: 90px;
+        opacity: 0.5;
+    }
+    .altAyakkabilar{
+        display: none;
+        flex-direction: row;
+        margin: 5px;
+    }
+    .absolute-1{
+        display: flex;
+    }
+    .absolute-2{
+        display: flex;
+    }
+    .üst{
+        display: flex;
+        flex-direction:row;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    .Collections{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        margin-left: 5px;
+    }
+    .ekleme{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .sepet{
+        display: flex;
+        margin-left: 90px;
+    }
+}
+
