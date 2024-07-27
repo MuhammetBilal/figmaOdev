@@ -40,9 +40,12 @@ body{
 }
 .cizgi{
     display: flex;
-    width: 1400px;
+    width: 100%;
+}
+.cizgi> div{
+    width: 100%;
     height: 1px;
-    margin-left: 50px;
+    margin: 0 50px;
     background-color: gray;
 }
 .relative-üstAyakkabi{
@@ -264,6 +267,9 @@ body{
         font-weight: bold;
         margin: 0px 0px;
     }
+    .relative-üstAyakkabi{
+        margin-left: 0;
+    }
     .sepetÜst{
         display: flex;
         margin-right: 20px;
@@ -272,6 +278,7 @@ body{
     .üstAyakkabi{
         display: flex;
         flex-direction: column; 
+        align-items: center;
     }
     .ustBaslik{
         margin-top: 50px;
@@ -312,4 +319,3 @@ body{
         margin-left: 90px;
     }
 }
-
